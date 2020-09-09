@@ -147,14 +147,18 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
   min-height: 100vh;
   padding: 0px 60px;
 }
-.textwrapper1{max-width: 50%;padding-top: 20vh;}
+#herosection .container{
+  height: 100vh;
+}
+.textwrapper1{max-width: 50%; padding-top: 20vh;}
 
 /* ---------------tablet-------------- */
 @media screen and (max-width: 922px){
-  .textwrapper1{max-width: 70%;}
+
   #herosection{
-    min-height: 80vh;
+    min-height: 800px;
   }
+  .textwrapper1{max-width: 70%; position: sticky; top:0px;}
 }
 
 /* ---------------mobile-------------- */
