@@ -10,7 +10,7 @@ h2{font-family: 'Playfair Display', serif; font-weight: 700; font-size: 40px; li
 p{font-family: 'Lato', sans-serif; font-weight: 300; font-size: 16px; line-height: 173%; letter-spacing: 0.03em; color: #ffffff; margin-bottom: 30px;}
 
 @media screen and (max-width: 922px){
-  p{font-size: 14px;}
+  p{font-size: 16px;}
   h1{font-size: 40px;}
   h2{font-size: 30px;}
 }
