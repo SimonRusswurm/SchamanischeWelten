@@ -48,9 +48,6 @@ button:hover{
 }
 
 
-
-
-
 /*---------------------------------------header-----------------------------------------*/
 header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
 .navigation{max-width: 1200px;}
@@ -114,11 +111,11 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
 
     clip-path: circle(10px at 90% -40%);
     -webkit-clip-path:circle(10px at 90% -40%);
-    transition: all 0.5s ease-out;
+    transition: all 0.3s linear;
   }
   .open{
-    clip-path: circle(1200px at 90% -30%);
-    -webkit-clip-path:circle(1200px at 90% -30%);
+    clip-path: circle(1300px at 90% -30%);
+    -webkit-clip-path:circle(1300px at 90% -30%);
   }
 
   .nav-links li a{
@@ -137,7 +134,8 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
 /*---------------------------------------------herosection-----------------------------------------------*/
 
 #herosection{
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(images/herobackground.jpg);
+  /* background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(images/herobackground.jpg); */
+  background-image: url(images/herobackground_high.jpg);
   background-position: center center;
   background-size:cover;
   min-height: 100vh;
@@ -182,8 +180,9 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
 }
 
 .flexbox{display: flex;}
-.leftblock{width: 50%;}
-.rightblock{width: 50%;}
+.leftblock{width: 50%; display: flex; justify-content: center; padding: 5px;}
+.img1{width:100%; max-width: 400px; height: 100%; margin: 0px 5%; background-image: url(images/susanna_weninger.jpg); background-size: cover; background-position: center center;}
+.rightblock{width: 50%; padding: 5px;}
 
 .flexbox_rectangle{display: flex; justify-content: flex-end;}
 .rectangle{
@@ -196,9 +195,6 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
   box-shadow: 20px 7px 40px rgba(0, 0, 0, 0.2);
 }
 .textwrapper2{max-width: 410px;}
-
-#about img{max-height: 450px;position: sticky;
-top: 40px;}
 
 /* --------------------mobile--------------------- */
 
@@ -219,12 +215,9 @@ top: 40px;}
   .textwrapper2{max-width: 100%}
   .rectangle{
     width: 100%;
-    height: 90%;
-    top:15%
+    height: 95%;
+    top:10%
   }
-  #about img{max-height: 300px; margin-bottom: 10px;}
-
-
 }
 
 /* --------seminars------------ */
