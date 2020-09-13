@@ -23,6 +23,7 @@ p{font-family: 'Lato', sans-serif; font-weight: 300; font-size: 16px; line-heigh
 
 /* ---------presets----------- */
 .container{margin-left: auto; margin-right: auto; max-width: 1080px;}
+.flexbox{display: flex;}
 .relativecontainer {position: relative; z-index: 1}
 .spacing{min-height: 30px;}
 
@@ -134,8 +135,8 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
 /*---------------------------------------------herosection-----------------------------------------------*/
 
 #herosection{
-  /* background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(images/herobackground.jpg); */
-  background-image: url(images/herobackground_high.jpg);
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(images/herobackground_high.jpg);
+  /*background-image: url(images/herobackground_high.jpg);*/
   background-position: center center;
   background-size:cover;
   min-height: 100vh;
@@ -178,23 +179,35 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
 #about{
   padding: 100px 60px;
 }
-
-.flexbox{display: flex;}
-.leftblock{width: 50%; display: flex; justify-content: center; padding: 5px;}
-.img1{position: sticky; top: 50px; width: 260px; max-width: 420px; height: 400px; margin: 0px 5%; background-image: url(images/susanna_weninger.jpg); background-size: cover; background-position: center center;}
-.rightblock{width: 50%; padding: 5px;}
-
-.flexbox_rectangle{display: flex; justify-content: flex-end;}
-.rectangle{
-  position: absolute;
-  top: -5%;
-  width: 80%;
-  height: 110%;
-  background-color: #92A8CD;
-  z-index: -1;
-  box-shadow: 20px 7px 40px rgba(0, 0, 0, 0.2);
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.textwrapper2{max-width: 410px;}
+
+@media screen and (max-width: 680px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.gridblock{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #92A8CD;
+}
+.img{
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+.about-me{
+  background-image: url(images/susanna_weninger.jpg);
+  background-position: top center;
+}
 
 /* --------------------mobile--------------------- */
 
@@ -218,55 +231,40 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
   }
 }
 
-/* --------seminars------------ */
-
-#seminars{
-  background-image: url(images/drum_01.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-
-
-/* ---------------mobile-------------- */
-@media screen and (max-width: 768px){
-  #seminars{
-    padding: 40px 20px;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/drum_01.jpg);
-    background-position: center right;
-  }
-  .textwrapper2{
-    text-align: center;
-  }
-}
 
 /* -----------------------------------services---------------------------- */
-#services{
-  padding: 100px 60px;
+
+.seminars{
+  background-image: url(images/seminars.jpg);
+  background-position: center center;
 }
-#services img{
-  max-width: 360px;
-  position: sticky;
-  top: 40px;
+
+.education{
+  background-image: url(images/education.jpg);
+  background-position: center center;
 }
-@media screen and (max-width: 922px){
-  #services img{
-    max-width: 310px;
-  }
+
+.work{
+  background-image: url(images/services_image.jpg);
+  background-position: 0px 0px, 50% 30%;
 }
+
+.energetic-cleaning{
+  background-image: url(images/incense.jpg);
+  background-position: center center;
+}
+
+.textwrapper3{
+  padding: 10% 5%;
+  text-align: center;
+}
+
+/* --------------------mobile--------------------- */
 
 @media screen and (max-width: 768px){
   #services{
     padding: 60px 20px;
   }
-
-  #services img{
-    display: none;
-  }
-  .serv{
-    height: 110%;
-    top:-5%;
-  }
-
 }
 
 
