@@ -181,7 +181,7 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
 
 .flexbox{display: flex;}
 .leftblock{width: 50%; display: flex; justify-content: center; padding: 5px;}
-.img1{width:100%; max-width: 400px; height: 100%; margin: 0px 5%; background-image: url(images/susanna_weninger.jpg); background-size: cover; background-position: center center;}
+.img1{position: sticky; top: 50px; width: 260px; max-width: 420px; height: 400px; margin: 0px 5%; background-image: url(images/susanna_weninger.jpg); background-size: cover; background-position: center center;}
 .rightblock{width: 50%; padding: 5px;}
 
 .flexbox_rectangle{display: flex; justify-content: flex-end;}
@@ -207,9 +207,7 @@ header{background-color: #627CA9; position: fixed; width: 100%; z-index: 10;}
     padding: 0px 5px;
   }
   .leftblock{
-    display: flex;
-    justify-content: center;
-    width: 100%
+    width: 100%;
   }
   .rightblock{width: 100%; text-align: center;}
   .textwrapper2{max-width: 100%}
