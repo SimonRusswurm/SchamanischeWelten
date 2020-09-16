@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <title>Anfrage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleRequest.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <div class="container navigation">
+          <nav>
+            <div class="main-nav">
+              <div class="brand" href="#">
+              </div>
+              <ul class="nav-links">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="#">Seminare</a> </li>
+                <li> <a href="request.html">Anfragen</a> </li>
+                <li> <a href="#">Über mich</a> </li>
+                <li> <a href="#">Kontakt</a> </li>
+              </ul>
+              <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <section id="request">
+        <div class="container">
+            <h2>Anfrage</h2>
+            <form action="request.html" method="POST">
+                <select name="dropdown" id="dropdown">
+                    <option value="Einzelsitzung">Einzelsitzung</option>
+                    <option value="Enegetische Räucherung">Enegetische Räucherung</option>
+                </select><br>
+                <input type="text", name="name" placeholder="Name *" required><br>
+                <input type="text", name="telephone", placeholder="Telefonnummer *" required><br>
+                <input type="email", name="email", placeholder="email *" required><br>            
+                <textarea  name="comments" rows="10", placeholder="Fragen, Kommentare, Thema der Einzelsitzung"></textarea>
+                <p>* Pflichtfelder</p>
+                <p>Es gilt die <a href="datenschutzerklärung.html">Datenschutzerklärung </a><input type="checkbox", id="check" required></p>
+                <input type="submit", name="submit", id="submit"><br>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="webscript.js">
+
+    </script>
+  </body>
+</html>
