@@ -9,7 +9,7 @@ p{
     margin: 5px 5px;
 }
 p a{
-    color: #627CA9;
+    text-decoration: underline;
 }
 
 select{
