@@ -1,0 +1,84 @@
+h2{
+    text-align: center;
+}
+.spacer{
+    height: 60px;
+}
+.seminar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    position: relative;
+    z-index: 2;
+}
+.background{
+    position: absolute;
+    bottom: 0px;
+    background-color:  #92A8CD;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    -webkit-box-shadow: 20px 10px 70px 0px rgba(0,0,0,0.25);  
+    -moz-box-shadow:    20px 10px 70px 0px rgba(0,0,0,0.25);
+    box-shadow:         20px 10px 70px 0px rgba(0,0,0,0.25);
+}
+
+.picture{
+    width: 800px;
+    height: 350px;
+    background-image: url(images/vollmond.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 20px 20px 70px 0px rgba(0,0,0,0.25);  
+    -moz-box-shadow:    20px 20px 70px 0px rgba(0,0,0,0.25);
+    box-shadow:         20px 20px 70px 0px rgba(0,0,0,0.25);
+}
+@media screen and (max-width: 920px){
+    .picture{
+        width: 100%;
+    }
+}
+
+.description{
+    max-width: 800px;
+    text-align: center;
+}
+
+.infos{
+    max-width: 800px;
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.narrow{
+    padding: 0px;
+    width: 200px;
+    margin: 10px;
+
+}
+
+.btn-transparent{
+    background: none;
+    color: white;
+    border-color: white;
+}
+.btn-transparent:hover{
+    background: rgba(255,255,255,0.25);
+    color: white;
+    
+}
+
+.btn-white{
+    background: white;
+    color: #28314c;
+    border-color: white;
+}
+.btn-white:hover{
+    background: rgba(255,255,255,0.25);
+}

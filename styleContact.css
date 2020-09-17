@@ -1,11 +1,11 @@
 
 #contact{
-    
+      
 }
 
 h2{
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 p{
     margin: 0px;
@@ -27,7 +27,7 @@ a:hover{
     height:80vh;
 }
 
-.flexbox{
+#contact .flexbox{
     margin-top: 10vh;
     
     padding: 10%;
@@ -37,7 +37,7 @@ a:hover{
     background-color: #92A8CD;
     background-image: url(images/drum_03.png);
     background-position: right bottom;
-    background-size: 50%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -46,7 +46,7 @@ a:hover{
         text-align: center;
         display: inline;
     }
-    .flexbox{
+    #contact .flexbox{
         padding: 5px;
     }
 }

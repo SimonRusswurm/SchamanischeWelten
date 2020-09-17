@@ -1,12 +1,14 @@
+.spacer{
+    height: 60px;
+}
+
 h2{
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 p{
     margin: 5px 5px;
-
 }
-a{
+p a{
     color: #627CA9;
 }
 
@@ -43,5 +45,24 @@ textarea{
     background-image: url(images/drum_02.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right bottom;
+}
+
+@media screen and (max-width: 768px){
+    textarea{
+        width: 100%;
+    }
+    select{
+        width: 100%;
+    }
+    input{
+        width:100%;
+    }
+    #request p{
+        text-align: left;
+    }
+    #request{
+        background-image: url(images/drum_02.png);
+
+    }
 }
