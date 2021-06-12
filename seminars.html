@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="styleSeminars.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
 
@@ -35,45 +37,40 @@
         </nav>
       </div>
     </header>
-    <div class="spacer"></div>
+    <div class="navspacer"></div>
 
 	<!-- ************************* SEMINARE ************************* -->
-	
-    <section id="seminars">
-        <div class="container">
-            <h2>Seminare</h2>
-            <div class="seminar" id="Vollmondritual">
-                <div class="picture">
-                </div>
-                <div class="background">
-                </div>
-                <div class="titel">
-                    <h3>
-					<!-- ***** SEMINARTITEL ***** -->
-					Vollmondritual
-					
-					</h3>
-                </div>
-                <div class="description">
-                    <p>
-					<!-- ***** KURZBESCHREIBUNG ***** -->
-					Dies ist ein Beispieltext, er hat keinen Sinn und Zweck. Dies ist ein Beispieltext, er hat keinen Sinn und Zweck. Dies ist ein Beispieltext, er hat keinen Sinn und Zweck.Dies ist ein Beispieltext, er hat keinen Sinn und Zweck.Dies ist ein Beispieltext, er hat keinen Sinn und Zweck.<br>
-                    Dies ist ein Beispieltext, er hat keinen Sinn und Zweck. Dies ist ein Beispieltext, er hat keinen Sinn und Zweck. 
-                    </p>
-                </div>
-                <div class="infos">
+  <div id="seminars">
+    <div class="seminarContainer">
+      <div class="seminarWrapper">
+        <div class="seminarText">
+          
+          <h2 class="width70">Erde - im Elementezyklus</h2>
+          <p class="width70">Mutter Erde trägt und nährt uns, Tag für Tag. Durch sie sind wir in Verbindung mit unseren AhnInnen und unserer eigenen Schöpferkraft. Wir tauchen ein, in die Bedeutung des Elements Erde aus schamanischer Sicht, mit Ergänzungen aus der Medizin, Kinesiologie und der Pflanzenwelt.</p>
+          <p>Datum: 15.09.2020, Uhrzeit: 09:00 Uhr bis 18:00 Uhr <br>Ort: Auerbach Weg 29,  8242 St. Lorenzen am Wechsel <br>Teilnehmer*innen: 4-8 <br>Kosten: € 150,-</p>
+          <button>Anmeldung</button>
+          <button>Mehr Infos</button>
+        </div>      
+        <img class="seminarImage" src="images/seminars.jpg" alt="schamanisches Seminar">
+      </div>
+    </div>
 
-                        Datum: 30.11.2020 <br>
-                        Ort: Auerbach Weg 29,  8242 Auerbach <br>
-                        Maximale Personenanzahl 8   <br></p>
-                </div>
-                <div class="buttons">
-                  <a href="request.html" id="Anfrage"><button type="button" class="button btn-white narrow">Anfrage</button></a>
-                  <a href="Test.pdf" id="Vollmondritual" target="_blank"><button type="button" class="button btn-transparent narrow" name="button">Mehr Infos</button></  
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="seminarContainer">
+      <div class="seminarWrapper">
+        <div class="seminarText">
+          <h2>Kraft der Ahnen</h2>
+          <p class="width70 height">Mutter Erde trägt und nährt uns, Tag für Tag. Durch sie sind wir in Verbindung mit unseren AhnInnen und unserer eigenen Schöpferkraft. Wir tauchen ein, in die Bedeutung des Elements Erde aus schamanischer Sicht, mit Ergänzungen aus der Medizin, Kinesiologie und der Pflanzenwelt.</p>
+          <p>Datum: 15.09.2020 <br>Uhrzeit: 09:00 Uhr bis 18:00 Uhr <br>Ort: Auerbach Weg 29,  8242 St. Lorenzen am Wechsel <br>Teilnehmer*innen: 4-8 <br>Kosten: € 150,-</p>
+          <div class="flex">
+            <button class="seminarButton">Anmeldung</button>
+            <button class="seminarButton">Mehr Infos</button>
+          </div>
+        </div>      
+        <img class="seminarImage" src="images/education.jpg" alt="schamanisches Seminar">
+      </div>
+    </div>
+  </div>
+  
 	
 	<!-- ************************* FOOTER ************************* -->
    
@@ -104,6 +101,9 @@
     </footer>
 
     <script type="text/javascript" src="webscript.js">
+
+    </script>
+    <script type="text/javascript" src="contentmanager.js">
 
     </script>
   </body>

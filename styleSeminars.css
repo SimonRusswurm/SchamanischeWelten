@@ -1,84 +1,90 @@
-h2{
-    text-align: center;
+:root{
+    --black: #222222;
+    --white: #F8F8F8;
+    --lightBlue: #D0DEE2;
+    --midBlue: #7498C0;
+    --darkBlue: #233240;
+    --bg: #f6ffa6;
+    --shadow: rgba(0,0,0,0.5);
+
 }
-.spacer{
-    height: 60px;
-}
-.seminar{
+
+.flex{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 2;
-}
-.background{
-    position: absolute;
-    bottom: 0px;
-    background-color:  #92A8CD;
-    height: 70%;
     width: 100%;
-    z-index: -1;
-    -webkit-box-shadow: 20px 10px 70px 0px rgba(0,0,0,0.25);  
-    -moz-box-shadow:    20px 10px 70px 0px rgba(0,0,0,0.25);
-    box-shadow:         20px 10px 70px 0px rgba(0,0,0,0.25);
+    flex-direction: row;
+    justify-content: start;
 }
 
-.picture{
-    width: 800px;
-    height: 350px;
-    background-image: url(images/vollmond.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 25px;
-    -webkit-box-shadow: 20px 20px 70px 0px rgba(0,0,0,0.25);  
-    -moz-box-shadow:    20px 20px 70px 0px rgba(0,0,0,0.25);
-    box-shadow:         20px 20px 70px 0px rgba(0,0,0,0.25);
-}
-@media screen and (max-width: 920px){
-    .picture{
-        width: 100%;
-    }
+.width70{
+    width: 70%;
 }
 
-.description{
-    max-width: 800px;
-    text-align: center;
+.seminarButton{
+    margin-right: 30px;
 }
 
-.infos{
-    max-width: 800px;
-    text-align: center;
-}
-
-.buttons{
-    text-align: center;
-}
-
-.narrow{
-    padding: 0px;
-    width: 200px;
-    margin: 10px;
-
-}
-
-.btn-transparent{
-    background: none;
-    color: white;
-    border-color: white;
-}
-.btn-transparent:hover{
-    background: rgba(255,255,255,0.25);
-    color: white;
+.seminarContainer{
     
+    background: rgb(208,222,226);
+    background: linear-gradient(180deg, rgba(208,222,226,1) 0%, rgba(255,255,255,1) 50%, rgba(208,222,226,1) 100%);
 }
 
-.btn-white{
-    background: white;
-    color: #28314c;
-    border-color: white;
+.seminarWrapper{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding: 25px 2%;
 }
-.btn-white:hover{
-    background: rgba(255,255,255,0.25);
+.seminarImage{
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    width: 28%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 40% 50%;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px var(--shadow);
+}
+.seminarText{
+    left: 0px;
+    display: block;
+    padding: 4% 6%;
+    z-index: 2;
+    background-color: var(--midBlue);
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .seminarButton{
+        margin-right: 0px;
+    }
+    .flex{
+        justify-content: space-around;
+    }
+    .width70{
+        width: auto;
+    }
+    .seminarText{
+        width: 88%;
+        padding-top: 270px;
+        margin-top: 50px;
+    }
+    .seminarImage{
+        position: absolute;
+        left: 6%;
+        top: 30px;
+        width: 88%;
+        height: 300px;
+        object-fit: cover;
+        object-position: 40% 50%;
+        border-radius: 5px;
+        box-shadow: -5px 5px 15px var(--shadow);
+    }
 }
