@@ -27,9 +27,9 @@ class Seminar {
         let reservationButton = document.createElement('button');
         let moreInfosButton = document.createElement('button');
         
-        seminarContainer.classList.add('seminarContainer');
+        seminarContainer.classList.add('blueGradientContainer');
         seminarWrapper.classList.add('seminarWrapper');
-        seminarText.classList.add('seminarText');
+        seminarText.classList.add('blueBgContainer');
         seminarImage.classList.add('seminarImage');
         seminarTitle.classList.add('width70');
         seminarDescription.classList.add('width70');

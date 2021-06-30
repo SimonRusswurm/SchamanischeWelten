@@ -5,45 +5,64 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="styleSeminars.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="navStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
     <!-- **************************** HEADER  **************************** -->
 	
     <header id="navbar">
-      <div class="container navigation">
-        <nav>
-          <div class="main-nav">
-            <div class="brand" href="#">
-            </div>
-            <ul class="nav-links">
-              <li> <a href="index.html">Angebot v</a> </li>
-              <li> <a href="seminars.html">Home</a> </li>
-              <li> <a href="about.html">Über mich</a> </li>
-              <li> <a href="contact.html">Kontakt</a> </li>
-            </ul>
-            <div class="hamburger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
+        <nav class="navContainer flexRow mw1500">
+          <a href="index.html"><img class="brand" src="images/logo.svg" alt="Logo"></a>
+          <ul class="flexRow">
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a id="dropTrigger">Angebot</a> </li>
+            <li> <a href="index.html#about">Über uns</a> </li>
+            <li> <a href="index.html#contact">Kontakt</a> </li>
+          </ul>
+          <div class="navDrop">
+            <li> <a href="seminars.html">Seminare</a> </li>
+            <li> <a href="index.html">Ausbildung</a> </li>
+            <li> <a href="index.html">Energetisches Räuchern</a> </li>
+            <li> <a href="index.html">Aufstellung</a> </li>
+            <li> <a href="index.html">Einzelsitzung</a> </li>
+            <li> <a href="index.html">Kinesiologische Behandlung</a> </li>
+          </div>
+          <div class="navHamburger">
+            <div class="hamburgerLine"></div>
+            <div class="hamburgerLine"></div>
+            <div class="hamburgerLine"></div>
           </div>
         </nav>
-      </div>
+        <nav class="navMobile">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="index.html#about">Über uns</a> </li>
+          <li> <a href="index.html#contact">Kontakt</a> </li>
+          <li> <a href="seminars.html">Seminare</a> </li>
+          <li> <a href="index.html">Ausbildung</a> </li>
+          <li> <a href="index.html">Energetisches Räuchern</a> </li>
+          <li> <a href="index.html">Aufstellung</a> </li>
+          <li> <a href="index.html">Einzelsitzung</a> </li>
+          <li> <a href="index.html">Kinesiologische Behandlung</a> </li>
+        </nav>
     </header>
-
 
     <div>
       <div class="heroBg heroWaterfall"></div>
       <div class="heroBg heroSeminar"></div>
       <div class="heroBg heroEducation"></div>
+      <div class="heroBg heroEducation"></div>
+      <div class="heroBg heroEducation"></div>
+      <div class="heroBg heroEducation"></div>
+      <div class="heroBg heroEducation"></div>
+      <div class="blackBg"></div>
     </div>
 
-    <div class="heroContainer">
+    <section id="langding" class="heroContainer">
       <div class="flexbox centerHV flexColumn">
         <div class="spacer100"></div>
         <img class="heroLogo" src="images/Logo_shadow.svg" alt="Logo">
@@ -55,18 +74,78 @@
           <a id="hB2" href="" class="heroButton">Energetisches Räuchern</a>
           <a id="hB3" href="" class="heroButton">Aufstellung</a>
           <a id="hB4" href="" class="heroButton">Einzelsitzung</a>
-          <a id="hB5" href="" class="heroButton">Chinesiologische Behandlung</a>
+          <a id="hB5" href="" class="heroButton">Kinesiologische Behandlung</a>
         </div>
       </div>
-    </div>
+    </section>
+    
+    <section id="about">
+      <div class="spacer100"></div>
+      <div class="blueGradientContainer"></div>
+          <div class="mw1110 marginAuto relative grid90_10">
+            <div class="pad60px blueBg rounded">
+              <h2 class="w75">Susanna Weninger</h2>
+              <p class="w75">
+                Mein Name ist Mag.a Susanna Weninger und ich lebe den Schamanismus seit 2009. Meine Ausbildung begann in Österreich, anschließend lernte ich in Nepal, Togo, Benin und in der Mongolei. <br><br>
+                In der Mongolei, dem Land meiner VorfahrInnen, fand ich meine zweite Heimat und begegnete meiner heutigen Lehrerin, Enkhee, welche mich das Rufen meiner Spirits in den eigenen Körper lehrte. <br><br>
+                Ich lebe und lehre den mongolischen Schamanismus und verbinde ihn mit den Kenntnissen meiner Reisen und dem Wissen meiner zusätzlichen Ausbildungen in der Aufstellungstechnik und der Pflanzenheilkraft. 
+              </p>
+              <button>Mein Weg</button>
+            </div>
+            <img class="boxShad objFit rounded absolute aboutImg" src="images/susanna_weninger.jpg" alt="schamanisches Seminar">
+          </div>          
+        </div>
+      </div>
+      
+      <div class="spacer100"></div>      
+    
+      <div class="blueGradientContainer"></div>
+          <div class="mw1110 marginAuto relative grid10_90">
+            <img class="boxShad objFit rounded absolute aboutImgRev" src="images/Chiara Weninger.JPG" alt="schamanisches Seminar">
+            <div></div>
+            <div class="pad60px padL20p blueBg rounded">
+              <h2 class="w75">Chiara Weninger</h2>
+              <p class="">
+                Mein Name ist Mag.a Susanna Weninger und ich lebe den Schamanismus seit 2009. Meine Ausbildung begann in Österreich, anschließend lernte ich in Nepal, Togo, Benin und in der Mongolei. <br><br>
+                In der Mongolei, dem Land meiner VorfahrInnen, fand ich meine zweite Heimat und begegnete meiner heutigen Lehrerin, Enkhee, welche mich das Rufen meiner Spirits in den eigenen Körper lehrte. <br><br>
+                Ich lebe und lehre den mongolischen Schamanismus und verbinde ihn mit den Kenntnissen meiner Reisen und dem Wissen meiner zusätzlichen Ausbildungen in der Aufstellungstechnik und der Pflanzenheilkraft. 
+              </p>
+              <button>Mein Weg</button>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
 
-    <div class="spacer100"></div><div class="spacer100"></div><div class="spacer100"></div><div class="spacer100"></div><div class="spacer100"></div>
+    <div class="spacer100"></div>
 
+    <section id="contact">
+      <div class="spacer100"></div>
+      <div class="mw1110 marginAuto relative">
+        <div class="pad60px blueBg rounded">
+          <h2>Kontakt</h2>
+          <p class="font25">Susanna Weninger / Chiara Weninger</p>
+          <p class="font25">Adresse: <a class="font25 darkblue" href="https://www.google.at/maps/place/Auerbach+Weg+29,+8242+Auerbach/" target="_blank">Auerbach Weg 29,  8242 Auerbach</a></p>
+          <p class="font25">E-Mail: <a class="font25 darkblue" href="mailto:office@schamanischewelten.at">office@schamanischewelten.at</a></p>
+          <p class="font25">Telefon: <a class="font25 darkblue" href="tel:+491234012345">+43 677 000000</a></p>
+        </div>
+        <img class="objFit rounded absolute contactImg" src="images/drum_02.png" alt="schamanisches Seminar">
+      </div>
+      
+    </section>
+
+    <div class="spacer100"></div>
+    <div class="bottomImage"></div>  
     
 
 	<!-- **************************** FOOTER  **************************** -->
 
     <footer>
+      <div class="flex">
+
+
+      </div>
+
       <div class="container">
         <div class="wrappercenter">
           <img src="images/logo.svg" alt="Logo">
@@ -78,7 +157,7 @@
             <li><a href="request.html">Anfrage</a></li>
           </div>
           <div class="footer_column">
-            <li><a href="about.html">Über mich</a></li>
+            <li><a href="about.html">Über uns</a></li>
             <li><a href="contact.html">Kontakt</a></li>
           </div>
           <div class="footer_column">
@@ -92,8 +171,10 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="webscript.js">
-
+    <script type="text/javascript" src="webscript.js"></script>
+    <script type="text/javascript" src="screenDimensions.js"></script>
+    <script type="text/javascript" src="navScript.js"></script>
+    
     </script>
   </body>
 </html>

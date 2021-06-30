@@ -6,7 +6,6 @@
     --darkBlue: #233240;
     --bg: #f6ffa6;
     --shadow: rgba(0,0,0,0.5);
-
 }
 
 .flex{
@@ -19,13 +18,18 @@
 .width70{
     width: 70%;
 }
+.w100{
+    width: 100%;
+}
+.width50{
+    width: 50%;
+}
 
 .seminarButton{
     margin-right: 30px;
 }
 
-.seminarContainer{
-    
+.blueGradientContainer{
     background: rgb(208,222,226);
     background: linear-gradient(180deg, rgba(208,222,226,1) 0%, rgba(255,255,255,1) 50%, rgba(208,222,226,1) 100%);
 }
@@ -35,7 +39,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    max-width: 1110px;
     padding: 25px 2%;
 }
 .seminarImage{
@@ -45,11 +49,24 @@
     width: 28%;
     height: 80%;
     object-fit: cover;
-    object-position: 40% 50%;
+    object-position: 50% 50%;
     border-radius: 5px;
     box-shadow: -5px 5px 15px var(--shadow);
 }
-.seminarText{
+
+.invertedSeminarImage{
+    position: absolute;
+    top: 10%;
+    width: 28%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px var(--shadow);
+    margin-left: 10px;
+}
+
+.blueBgContainer{
     left: 0px;
     display: block;
     padding: 4% 6%;
@@ -59,7 +76,18 @@
     width: 80%;
 }
 
-
+.invertedBlueBgContainer{
+    
+    display: block;
+    padding: 4% 6%;
+    
+    z-index: 2;
+    background-color: var(--midBlue);
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px;
+    margin-left: 10%;
+}
 
 @media screen and (max-width: 768px){
     .seminarButton{

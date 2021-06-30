@@ -1,0 +1,128 @@
+:root{
+    --black: #111111;
+    --white: #F8F8F8;
+    --lightBlue: #D0DEE2;
+    --midBlue: #7498C0;
+    --darkBlue: #233240;
+    --bg: #f6ffa6;
+    --shadow: rgba(0,0,0,0.5);
+}
+
+header{
+    transition: all 0.6s ease-out;
+    background-color: var(--darkBlue);
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    top: 0px;
+}
+
+.navspacer{
+    height: 60px;
+}
+
+.brand{
+    height: 60px;
+    max-width: 400px;
+}
+
+.navContainer{
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 30px;
+}
+
+.navContainer ul{
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.navMobile{
+    display: none;
+    padding: 60px 0px 20px 0px;
+    position: absolute;
+    align-items: flex-end;
+    top: -1000px;
+    z-index: -1;
+    width: 100%;
+    background-color: var(--darkBlue);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.navMobile li{
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.navHamburger{
+    display: none;
+    width: 30px;
+    cursor: pointer;
+    margin: 20px 0px 10px 0px;
+}
+
+.hamburgerLine{
+    pointer-events: none;
+    background-color: var(--white);
+    height: 3px;
+    width: 30px;
+    border-radius: 100px;
+    margin: 5px 0px;
+}
+
+@media screen and (max-width: 935px){
+    .navContainer ul{
+       display: none;
+    }
+
+    .navHamburger{
+        display: unset;
+    }
+
+    .navMobile{
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+}
+
+.navContainer ul li{
+    padding-left: 70px;
+}
+
+.navContainer ul li a, .navDrop li a{
+    transition: all 0.5s;
+    border-bottom: 2px solid transparent;  
+}
+
+.navContainer ul li a:hover, .navDrop li a:hover{
+    border-bottom: 2px solid var(--white);
+    
+}
+
+#dropTrigger{
+    cursor: pointer;
+}
+
+.navDrop{
+    display: none;
+    position: absolute;
+    background-color: var(--darkBlue);
+    padding: 10px 20px;
+    z-index: 100;
+}
+.navDrop li a{
+    line-height: 40px;
+}
+
+.show{
+    display: unset;
+}
+.show2{
+    visibility: visible;
+    opacity: 1;
+}

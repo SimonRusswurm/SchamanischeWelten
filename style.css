@@ -9,46 +9,57 @@ html, body {margin: 0; padding: 0; background-color: #D0DEE2;}
   --shadow: rgba(0,0,0,0.5);
 }
 
-
-section{padding: 20px 60px;}
 a{text-decoration: none; font-family: 'Lato', sans-serif; font-weight: 400; font-size: 14px; line-height: 173%; letter-spacing: 0.03em; color: #ffffff;}
 li{list-style-type: none;}
 h1{font-family: 'Merriweather', serif; font-weight: 700; font-size: 60px; line-height: 104%; color: #ffffff; margin-top: 20px; margin-bottom: 10px;}
 h2{font-family: 'Merriweather', serif; font-weight: 700; font-size: 40px; line-height: 43px; color: #ffffff; margin: 0 0 10px 0;}
 h3{font-family: 'Merriweather', serif; font-weight: 700; font-size: 30px; line-height: 32px; color: #ffffff; margin: 0 0 10px 0;}
+h4{font-family: 'Lato', sans-serif; font-weight: 300; font-size: 24px; line-height: 150%; letter-spacing: 0.03em; color: #ffffff; margin-bottom: 30px;}
 p{font-family: 'Lato', sans-serif; font-weight: 300; font-size: 16px; line-height: 150%; letter-spacing: 0.03em; color: #ffffff; margin-bottom: 30px;}
 
 
-@media screen and (max-width: 768px){
-  section{padding: 10px;}
-  p{text-align: center;}
-  h1{text-align: center; font-size: 9vw;}
-  h2{text-align: center; font-size: 35px;}
-}
 
 
 /* ******************************* PRESETES ******************************* */
-.container{margin-left: auto; margin-right: auto; max-width: 1440px;}
+.darkblue{
+  color:var(--darkBlue);
+}
+
+.mw1500{
+  max-width: 1500px;
+}
+
 .flexRow{
   display: flex;
   flex-direction: row;
 }
+
 .flexColumn{
   display: flex;
   flex-direction: column;
 }
+
 .centerHV{
   justify-content: center;
   align-items: center;
 }
+
 .spacer100{
   height: 100px;
 }
+
 .spacer50{
   height: 50px;
 }
-.relativecontainer {position: relative; z-index: 1;}
-.spacing{min-height: 30px;}
+
+.relativecontainer {
+  position: relative; z-index: 1;
+}
+
+.spacing{
+  min-height: 30px;
+}
+
 
 button{
   font-family: 'Lato', sans-serif; font-weight: 300; font-size: 16px; line-height: 173%; letter-spacing: 0.03em; color: #ffffff;
@@ -72,229 +83,6 @@ button:hover{
 .btn-brown:hover{
     background-color: rgba(126, 79, 37, 0.4);
     border-color: #ffffff;
-}
-
-/* ******************************* HEADER ******************************* */
-
-header{background-color: transparent; position: fixed; top: 0; width: 100%; z-index: 10;transition: top 0.3s;}
-.navspacer{
-  height: 60px;
-}
-.navigation{max-width: 1440px;}
-.main-nav{
-  padding: 0px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-}
-.brand{height: 60px; width: 400px; background-image: url(images/logo.svg); background-position: center left; background-size: contain; background-repeat: no-repeat;}
-
-.nav-links{
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.nav-links li a{
-  text-decoration: none;
-  color: var(--white);
-  font-size: 16px;
-  padding: 20px 0;
-  border-bottom: 2px solid rgba(255,255,255,0);
-  transition: all 0.3s ease-out;
-}
-.nav-links li a:hover{
-  border-bottom: 2px solid rgba(255,255,255,1);
-}
-
-/* ******************************* HEADER TABLET/MOBILE ******************************* */
-
-@media screen and (max-width: 978px){
-  .hamburger{
-    position:relative;
-    cursor: pointer;
-  }
-  .line{
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
-    border-radius: 50px;
-  }
-
-  .nav-links{
-    position: fixed;
-    left: 0px;
-    top: 50px;
-    background-color: #627CA9;
-    width: 100vw;
-    flex-direction:column;
-    justify-content: space-around;
-    max-height: 80vh;
-
-
-    clip-path: circle(10px at 90% -40%);
-    -webkit-clip-path:circle(10px at 90% -40%);
-    transition: all 0.3s linear;
-  }
-  .open{
-    clip-path: circle(1300px at 90% -30%);
-    -webkit-clip-path:circle(1300px at 90% -30%);
-  }
-
-  .nav-links li a{
-    border: none;
-    padding: 10px 100px;
-  }
-  .nav-links li a:hover{
-    border-bottom: none;
-  }
-}
-@media screen and (max-width: 768px){
-  .main-nav{
-    padding: 0px 20px;
-  }
-}
-
-/* ******************************* HERO ******************************* */
-
-#herosection{
-  /*background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0)), url(images/herobackground_high.jpg);*/
-  background-image: url(images/herobackground_high.jpg);
-  background-position: right center;
-  background-size:cover;
-  min-height: 100vh;
-  padding: 0px 60px;
-}
-#herosection .container{
-  height: 100vh;
-  padding-bottom: 20vh;
-}
-.textwrapper1{max-width: 50%; padding-top: 20vh; position: sticky; top: 0;}
-
-/* ******************************* HERO TABLET ******************************* */
-
-@media screen and (max-width: 922px){
-
-  #herosection{
-    min-height: 800px;
-    background-position: 70% 100%;
-  }
-  .textwrapper1{max-width: 70%;}
-}
-
-/* ******************************* HERO MOBILE ******************************* */
-
-@media screen and (max-width: 768px){
-  .textwrapper1{max-width: 100%;}
-  #herosection{
-    min-height: 100vh;
-    height: auto;
-    /*background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/herobackground.jpg);*/
-    padding: 0px 20px;
-  }
-  #herosection{
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/herobackground_high.jpg);
-
-  }
-}
-
-/* ******************************* ABOUT ******************************* */
-
-#about{
-  padding: 100px 60px;
-}
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (max-width: 680px){
-  .grid{
-    grid-template-columns: 1fr;
-  }
-}
-
-.gridblock{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #92A8CD;
-}
-.img{
-  min-height: 500px;
-  height: 100%;
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-}
-.about-me{
-  background-image: url(images/susanna_weninger.jpg);
-  background-position: top center;
-}
-
-/* ******************************* ABOUT TABLET/MOBILE ******************************* */
-
-@media screen and (max-width: 768px){
-  #about{
-    padding: 60px 20px;
-  }
-  .flexbox{
-    flex-direction: column;
-    padding: 0px 5px;
-  }
-  .leftblock{
-    width: 100%;
-  }
-  .rightblock{width: 100%; text-align: center;}
-  .textwrapper2{max-width: 100%}
-  .rectangle{
-    width: 100%;
-    height: 95%;
-    top:10%
-  }
-}
-
-/* ******************************* SERVICES ******************************* */
-
-.seminars{
-  background-image: url(images/seminars.jpg);
-  background-position: center center;
-}
-
-.education{
-  background-image: url(images/education.jpg);
-  background-position: center center;
-}
-
-.work{
-  background-image: url(images/services_image.jpg);
-  background-position: 0px 0px, 50% 30%;
-}
-
-.energetic-cleaning{
-  background-image: url(images/incense.jpg);
-  background-position: center center;
-}
-
-.textwrapper3{
-  padding: 10% 5%;
-  text-align: center;
-}
-
-/* ******************************* SERVICES MOBILE ******************************* */
-
-@media screen and (max-width: 768px){
-  #services{
-    padding: 60px 20px;
-  }
 }
 
 /* ******************************* FOOTER ******************************* */
@@ -335,9 +123,22 @@ footer li a:hover{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .heroBg{
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -345,6 +146,15 @@ footer li a:hover{
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+.blackBg{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--darkBlue);
+  z-index: 0;
 }
 
 .heroWaterfall{
@@ -362,7 +172,7 @@ footer li a:hover{
 .heroContainer{
   position: relative;
   z-index: 2;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -380,7 +190,7 @@ footer li a:hover{
 }
 
 .buttonGrid{
-  max-width: 1440px;
+  max-width: 1110px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -404,4 +214,102 @@ footer li a:hover{
   border-color: var(--midBlue);
   background-color: var(--midBlue);
   transform: scale(1.05);
+}
+
+.font25{
+  font-size: 25px;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.grid90_10{
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+
+.grid10_90{
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+.blueBg{
+  background-color: var(--midBlue);
+}
+
+.rounded{
+  border-radius: 5px;
+}
+
+.boxShad{
+  box-shadow: -5px 5px 15px var(--shadow);
+}
+
+.objFit{
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.w75{
+  width: 75%;
+}
+
+.mw1110{
+  max-width: 1110px;
+}
+
+.pad60px{
+  padding: 60px;
+}
+
+.padL20p{
+  padding-left: 28%;
+}
+
+.marginAuto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1167px){
+
+  .marginAuto{
+    margin: 0px 20px;
+  }
+}
+
+.aboutImg{
+  width: 30%;
+  height: 90%;
+  left: 70%;
+  top: 5%;
+}
+
+.aboutImgRev{
+  width: 30%;
+  height: 90%;
+  left: 0%;
+  top: 5%;
+  transform: scaleX(-1);
+}
+
+.contactImg{
+  width: 36%;
+  height: 110%;
+  left: 64%;
+  top: -10%;
+}
+
+.bottomImage{
+  width: 100%;
+  height: 600px;
+  background-image: url(images/Susanna_Weninger_Hochwechsel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
 }
