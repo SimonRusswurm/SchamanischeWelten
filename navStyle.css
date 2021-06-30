@@ -26,11 +26,25 @@ header{
     max-width: 400px;
 }
 
+@media screen and (max-width: 757px) {
+    .brand{
+        visibility: hidden;
+        max-width: 200px;
+    }
+    
+}
+
 .navContainer{
     justify-content: space-between;
     height: 60px;
     padding: 0 30px;
 }
+
+@media screen and (max-width: 1167px){
+    .navContainer{
+        padding: 0 10px;
+    }
+  }
 
 .navContainer ul{
     margin: 0;
@@ -73,7 +87,8 @@ header{
     margin: 5px 0px;
 }
 
-@media screen and (max-width: 935px){
+@media screen and (max-width: 976px){
+
     .navContainer ul{
        display: none;
     }
