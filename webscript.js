@@ -25,7 +25,6 @@ function Sleep(milliseconds) {
 }
 
 async function changeBgFrequently() {
-	
 	var i = 0;
 	while(true){
 		if(i === heroBgImages.length)

@@ -22,6 +22,10 @@ p{font-family: 'Lato', sans-serif; font-weight: 300; font-size: 16px; line-heigh
   h1{
     font-size: 7vw;
   }
+
+  p, h2{
+    text-align: center;
+  }
 }
 
 
@@ -58,6 +62,13 @@ p{font-family: 'Lato', sans-serif; font-weight: 300; font-size: 16px; line-heigh
   height: 50px;
 }
 
+@media screen and (max-width: 768px){
+  .mobileSpacer{
+    height: 350px;
+  }
+  
+}
+
 .relativecontainer {
   position: relative; z-index: 1;
 }
@@ -77,6 +88,7 @@ button{
   transition: all 0.2s linear;
   border-radius: 3px;
   cursor: pointer;
+  max-width: 200px;
 }
 button:hover{
   border-color: #ffffff;
@@ -236,7 +248,7 @@ footer li a:hover{
 
 @media screen and (max-width: 757px) {
   #about{
-    margin-top: 220px;
+    margin-top: 500px;
 
   }
 }
@@ -303,10 +315,44 @@ footer li a:hover{
 }
 
 @media screen and (max-width: 1167px){
-
+  
   .marginAuto{
     margin: 0px 20px;
   }
+
+  
+}
+
+@media screen and (max-width: 757px) {
+  .w75{
+    width: 100%;
+  }
+  
+  .grid90_10{
+    grid-template-columns: 1fr;
+  }
+
+  .grid10_90{
+    grid-template-columns: 1fr;
+  }
+
+  .pad60px{
+    padding: 5%;
+  }
+
+  .blueBg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+  }
+}
+
+
+
+.blueGradientContainer{
+  background: rgb(208,222,226);
+  background: linear-gradient(180deg, rgba(208,222,226,1) 0%, rgba(255,255,255,1) 50%, rgba(208,222,226,1) 100%);
 }
 
 .aboutImg{
@@ -322,6 +368,23 @@ footer li a:hover{
   left: 0%;
   top: 5%;
   transform: scaleX(-1);
+}
+
+@media screen and (max-width: 757px) {
+
+  .aboutImg{
+    width: 90%;
+    height: 400px;
+    top: -250px;
+    left:5%;
+  }
+
+  .aboutImgRev{
+    width: 90%;
+    height: 400px;
+    top: -250px;
+    left:5%;
+  }
 }
 
 .contactImg{

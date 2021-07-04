@@ -29,10 +29,7 @@
     margin-right: 30px;
 }
 
-.blueGradientContainer{
-    background: rgb(208,222,226);
-    background: linear-gradient(180deg, rgba(208,222,226,1) 0%, rgba(255,255,255,1) 50%, rgba(208,222,226,1) 100%);
-}
+
 
 .seminarWrapper{
     position: relative;
