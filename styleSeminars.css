@@ -39,6 +39,8 @@
     max-width: 1110px;
     padding: 25px 2%;
 }
+
+
 .seminarImage{
     position: absolute;
     left: 70%;
@@ -87,6 +89,15 @@
 }
 
 @media screen and (max-width: 768px){
+    .seminarWrapper{
+        margin-top: 300px;
+    }
+
+    .blueBgContainer{
+        padding-top: 40px;
+        width: 88%;
+    }
+
     .seminarButton{
         margin-right: 0px;
     }
@@ -104,12 +115,18 @@
     .seminarImage{
         position: absolute;
         left: 6%;
-        top: 30px;
+        top: -250px;
         width: 88%;
         height: 300px;
         object-fit: cover;
         object-position: 40% 50%;
         border-radius: 5px;
         box-shadow: -5px 5px 15px var(--shadow);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .seminarButton{
+        padding: 5px 20px;
     }
 }
