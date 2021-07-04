@@ -250,17 +250,16 @@ footer li a:hover{
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 757px) {
-  #about{
-    /* margin-top: 500px; */
-
-  }
-}
-
-
 .font25{
   font-size: 25px;
 }
+
+@media screen and (max-width: 615px) {
+  .font25{
+    font-size: 4vw;
+  }
+}
+
 
 .relative{
   position: relative;

@@ -90,11 +90,11 @@
 
 @media screen and (max-width: 768px){
     .seminarWrapper{
-        margin-top: 300px;
+        margin-top: 170px;
     }
 
     .blueBgContainer{
-        padding-top: 40px;
+        padding-top: 200px;
         width: 88%;
     }
 
@@ -115,7 +115,7 @@
     .seminarImage{
         position: absolute;
         left: 6%;
-        top: -250px;
+        top: -100px;
         width: 88%;
         height: 300px;
         object-fit: cover;

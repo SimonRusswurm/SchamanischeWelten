@@ -28,7 +28,6 @@ header{
 
 @media screen and (max-width: 757px) {
     .brand{
-        visibility: hidden;
         max-width: 200px;
     }
     
